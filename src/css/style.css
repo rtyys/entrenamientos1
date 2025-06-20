@@ -1,0 +1,150 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Open Sans'
+}
+/*body design and centering*/
+body {
+background: linear-gradient(135deg, #fdf8f8, #fdfbfbf8);
+min-height: 100vh ;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+min-width: 190px;
+}
+/* container design*/
+.contenedor {
+background: #6554adee;
+padding: 2rem 3rem;
+box-shadow: 10px 10px rgb(255, 255, 255);
+max-width: 500px;
+width: 100%;
+min-width: 190px;
+text-align: center;
+transition: transform 0.3s ease;
+color: white;
+border-radius: 20px;
+
+}
+/*container animation*/
+.contenedor:hover {
+transform: scale(1.02);
+}
+
+h1 {
+margin-bottom: 1.5rem;
+font-size: 2rem;
+color: #161010;
+}
+/*design label and input*/
+label {
+display: block;
+margin-top: 1rem;
+font-weight: 600;
+text-align: left;
+}
+
+input {
+width: 100%;
+padding: 0.8rem;
+margin-top: 0.3rem;
+border: 2px solid #ccc;
+border-radius: 10px;
+font-size: 1rem;
+}
+/*design button*/
+button {
+margin-top: 1.5rem;
+padding: 0.9rem 1.5rem;
+background: linear-gradient(to right, #1d1c1d, #430269);
+box-shadow: 2px 2px ;
+border-radius: 10px;
+color: rgb(253, 227, 227);
+font-size: 0.9rem;
+font-weight: 600;
+cursor: pointer;
+transition: background 0.3s ease, transform 0.2s;
+}
+/*button aniumation*/
+button:hover {
+transform: scale(1.05);
+}
+
+/*design message*/
+#message {
+margin-top: 2rem;
+font-size: 1.5rem;
+font-weight: 600;
+color: #b18686;
+min-height: 40px;
+}
+/*design footer and a*/
+footer {
+width: 100%;
+text-align: center;
+padding: 1rem;
+margin-top: 2rem;
+background-color: #241b74;
+color: #ffffff;
+font-size: 0.9rem;
+position: relative;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+/*keeps the footer in pc*/
+
+@media screen and (min-height: 600px) {
+body {
+    flex-direction: column;
+}
+.contenedor {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: auto;
+}
+}
+
+/*tablets*/
+@media screen and (max-width: 768px) {
+.contenedor {
+    padding: 1.5rem 2rem;
+    max-width: 90%;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+button {
+    width: 100%;
+}
+}
+/*mobile*/
+
+@media screen and (max-width: 480px) {
+.contenedor {
+    padding: 1rem 1.2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 0.95rem;
+}
+
+button {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+}
+}
